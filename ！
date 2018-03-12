@@ -1,0 +1,5 @@
+#include "apue.h"
+void mysetbuf(FILE *fp, char *restrict  buf)
+{
+    int error;
+}

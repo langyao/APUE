@@ -17,7 +17,7 @@ static void charactatime(char *str)
 
 static void  sig_usr(int signo)
 {
-    if(signo == SIGUSR1 || signo == SIGUSR2)
+ //   if(signo == SIGUSR1 || signo == SIGUSR2)
         sigflag = 1;
 }
 
@@ -67,6 +67,7 @@ void WAIT_CHILD()
         err_sys("sigprocmask wait_parent error");
 }
 
+/*
 int main(void)
 {
     pid_t pid;
@@ -88,3 +89,4 @@ int main(void)
 
     exit(0);
 }
+*/
